@@ -1,0 +1,12 @@
+{% extends 't_i_app/base.html' %}
+
+{% block title %}List of Cars{% endblock %}
+{% block header %}List of Cars{% endblock %}
+
+{% block content %}
+{% for car in car_list %}
+
+    <p>{{car}}</p>
+
+{% endfor %}
+{% endblock %}
